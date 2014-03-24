@@ -1,0 +1,37 @@
+{
+  "name": "etcsv",
+  "version": "0.1.0",
+  "revision": 0,
+  "description": "The Editing table for CSV databese ",
+  "main": "lib/etcsv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YusukeHirao/etcsv"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "csv",
+    "sql",
+    "database"
+  ],
+  "author": "Yusuke Hirao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YusukeHirao/etcsv/issues"
+  },
+  "homepage": "https://github.com/YusukeHirao/etcsv",
+  "dependencies": {
+    "csv": "~0.3.7",
+    "underscore": "~1.6.0",
+    "underscore.string": "~2.3.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-typescript": "~0.2.10",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
