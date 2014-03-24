@@ -28,7 +28,8 @@
     "underscore": "~1.6.0",
     "underscore.string": "~2.3.3",
     "deferred": "~0.6.8",
-    "csvtojson": "~0.2.2"
+    "csvtojson": "~0.2.2",
+    "iconv": "~2.0.7"
   },
   "devDependencies": {
     "grunt": "~0.4.4",

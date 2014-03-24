@@ -4,6 +4,8 @@
 
 "**e**diting **t**able for **csv**"
 
+[![Code Climate](https://codeclimate.com/github/YusukeHirao/etcsv.png)](https://codeclimate.com/github/YusukeHirao/etcsv)
+
 ## Install
 
 ```sh
