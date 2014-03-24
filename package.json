@@ -25,9 +25,10 @@
   },
   "homepage": "https://github.com/YusukeHirao/etcsv",
   "dependencies": {
-    "csv": "~0.3.7",
     "underscore": "~1.6.0",
-    "underscore.string": "~2.3.3"
+    "underscore.string": "~2.3.3",
+    "deferred": "~0.6.8",
+    "csvtojson": "~0.2.2"
   },
   "devDependencies": {
     "grunt": "~0.4.4",

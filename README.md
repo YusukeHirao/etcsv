@@ -2,18 +2,20 @@
 
 **etcsv(.js)** is node.js library to edit table for CSV database.
 
+"**e**diting **t**able for **csv**"
+
 ## Install
 
 ```sh
 $ npm install etcsv
 ```
 
-## How to use
+## Usage
 
 ```javascript
 var etcsv = require('etcsv');
 
-var table = etcsv.import('foo.csv');
+var table = etcsv.imports('foo.csv');
 
 // To edit every records
 table.setByColumns('column-name', function (value, thisRecord, thisColumn) {
