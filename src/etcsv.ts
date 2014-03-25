@@ -27,7 +27,7 @@ module etcsv {
 			var conv;
 			if (charset) {
 				conv = new iconv.Iconv(charset, 'UTF-8//TRANSLIT//IGNORE');
-				text = conv.convert(text).toString();
+				text = conv.convert(text);
 			}
 			this.text = text.toString();
 			this._parse();
@@ -40,7 +40,6 @@ module etcsv {
 			var k:number = 0;
 			var kL:number = this.header.length;
 			var record:Record;
-			var v:any;
 			for (; i < l; i++) {
 				record = new Record;
 				for (; k < kL; k++) {
@@ -125,9 +124,6 @@ module etcsv {
 			});
 		}
 
-	}
-
-	class Column {
 	}
 
 	class Record {
