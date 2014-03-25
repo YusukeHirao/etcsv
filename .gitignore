@@ -1,3 +1,4 @@
 node_modules
 .testdata
 src/DefinitelyTyped
+npm-debug.log

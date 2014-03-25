@@ -1,10 +1,10 @@
 {
   "name": "etcsv",
-  "version": "0.1.0",
-  "revision": 1,
+  "version": "0.1.1",
+  "revision": 2,
   "author": {
-    "name": "Yusuke Hirao",
-    "email": "yusukehiraoofficial@gmail.com",
+    "name": "yusukehirao",
+    "email": "yusukehirao@me.com",
     "web": "http://yusukehirao.com"
   },
   "contributors": [],
