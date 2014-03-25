@@ -2,7 +2,7 @@
 
 **etcsv(.js)** is node.js library to edit a table for CSV database.
 
-**e**diting **t**able for **csv**
+"Editing Table for **CSV**"
 
 [![Code Climate](https://codeclimate.com/github/YusukeHirao/etcsv.png)](https://codeclimate.com/github/YusukeHirao/etcsv)
 
