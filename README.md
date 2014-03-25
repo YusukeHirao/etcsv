@@ -49,7 +49,7 @@ This is fired records for set field name every time callback process. By returni
 If return `undefined`, or _does not return_ a value, a field value is **not changed**.  But, if return `null` or `0`, a field value will be **overwritten** by it.
 
 ```javascript
-table.setByFieldName('field-name', function (value, thisRecord, thisColumn) {
+table.setByFieldName('field-name', function (value, thisRecord) {
 	return value.replace(/\n/, '<br>');
 });
 ```
