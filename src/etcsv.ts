@@ -1,10 +1,12 @@
 /// <reference path="DefinitelyTyped/node/node.d.ts" />
+/// <reference path="DefinitelyTyped/moment/moment.d.ts" />
 
 module etcsv {
 
 	var fs = require('fs');
 	var path = require('path');
 	var iconv = require('iconv');
+	var moment = require('moment');
 
 	var parent = (module).parent;
 	var baseDir = path.dirname(parent.filename);
