@@ -9,6 +9,7 @@ module.exports = (grunt) ->
 		typescript:
 			options:
 				comments: on
+				declaration: on
 			etcsv:
 				src: [
 					'src/etcsv.ts'
