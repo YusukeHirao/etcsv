@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>etcsv | etcsv</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div id="tsd-filter">
+                <input type="checkbox" id="tsd-filter-inherited" checked />
+                <label for="tsd-filter-inherited">Inherited</label>
+
+                <input type="checkbox" id="tsd-filter-private" checked />
+                <label for="tsd-filter-private">Private</label>
+
+                <input type="checkbox" id="tsd-filter-only-exported" />
+                <label for="tsd-filter-only-exported">Only exported</label>
+            </div>
+
+            <a href="index.html">etcsv</a>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+            </ul>
+            <h1> etcsv</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            <h1 id="etcsv">etcsv</h1>
+<p><strong>etcsv(.js)</strong> is node.js library to edit a table for CSV database.</p>
+<p>&quot;Editing Table for <strong>CSV</strong>&quot;</p>
+<p><a href="https://codeclimate.com/github/YusukeHirao/etcsv"><img src="https://codeclimate.com/github/YusukeHirao/etcsv.png" alt="Code Climate"></a></p>
+<h2 id="install">Install</h2>
+<pre><code class="lang-sh"><span class="hljs-variable">$ </span>npm install etcsv
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> etcsv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'etcsv'</span>);
+
+<span class="hljs-keyword">var</span> table = etcsv.imports(<span class="hljs-string">'foo.csv'</span>);
+
+table.setByFieldName(<span class="hljs-string">'field-name'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(value, thisRecord, thisColumn)</span> {</span>
+    <span class="hljs-keyword">return</span> value.replace(<span class="hljs-regexp">/\n/</span>, <span class="hljs-string">'&lt;br&gt;'</span>);
+});
+
+table.save(); <span class="hljs-comment">// overwrite save</span>
+table.saveAs(<span class="hljs-string">'newFile.csv'</span>); <span class="hljs-comment">// save as new file</span>
+</code></pre>
+<h2 id="etcsv-methods">etcsv Methods</h2>
+<h3 id="-etcsv-imports-filepath-string-etcsv-table-"><code>etcsv.imports(filePath:String):etcsv.Table</code></h3>
+<p><strong>Warning:</strong> Sync (<strong>not async</strong>) process. This is returned an instance of the <code>etcsv.Table</code> Class.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> table = etcsv.imports(<span class="hljs-string">'foo.csv'</span>);
+</code></pre>
+<h2 id="table-class-methods">Table Class Methods</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> table = etcsv.imports(<span class="hljs-string">'foo.csv'</span>);
+</code></pre>
+<h3 id="-table-setbyfieldname-fieldname-string-callback-function-void-"><code>table.setByFieldName(fieldName:String, callback:Function):void</code></h3>
+<p>This is fired records for set field name every time callback process. By returning value to the callback function, edit a value of that field.
+If return <code>undefined</code>, or <em>does not return</em> a value, a field value is <strong>not changed</strong>.  But, if return <code>null</code> or <code>0</code>, a field value will be <strong>overwritten</strong> by it.</p>
+<pre><code class="lang-javascript">table.setByFieldName(<span class="hljs-string">'field-name'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(value, thisRecord)</span> {</span>
+    <span class="hljs-keyword">return</span> value.replace(<span class="hljs-regexp">/\n/</span>, <span class="hljs-string">'&lt;br&gt;'</span>);
+});
+</code></pre>
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="modules/etcsv.html">etcsv</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
