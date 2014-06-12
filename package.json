@@ -1,7 +1,7 @@
 {
   "name": "etcsv",
-  "version": "0.1.1",
-  "revision": 2,
+  "version": "0.2.0",
+  "revision": 57,
   "author": {
     "name": "yusukehirao",
     "email": "yusukehirao@me.com",
@@ -28,11 +28,14 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "iconv": "~2.0.7"
+    "iconv": "^2.0.7",
+    "moment": "^2.6.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-typescript": "~0.2.10",
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-typedoc": "^0.1.1",
+    "grunt-typescript": "^0.3.6",
+    "jaco": "^0.4.1"
   }
 }
